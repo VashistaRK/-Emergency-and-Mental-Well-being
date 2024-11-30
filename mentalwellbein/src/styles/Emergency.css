@@ -17,7 +17,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  height: 80vh;
+  height: 90vh;
   width: 80rem;
 }
 
@@ -51,7 +51,7 @@ body {
 /* Confirmation message styles */
 .confirmation {
   margin-top: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .confirmation p {
@@ -69,4 +69,50 @@ body {
   font-size: 16px;
   color: #555;
   margin: 5px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .emergency {
+    width: 95%; /* Adjust width to fit smaller screens */
+    padding: 15px; /* Reduce padding for smaller screens */
+    height: auto; /* Allow the height to adjust based on content */
+  }
+
+  #h2 {
+    font-size: 48px; /* Decrease font size for smaller screens */
+  }
+
+  .emergency-image {
+    width: 100%; /* Make the button full width on smaller screens */
+    height: 15rem; /* Adjust height for smaller screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .confirmation p {
+    font-size: 14px; /* Reduce the font size of the confirmation message */
+  }
+
+  .confirmation li {
+    font-size: 14px; /* Reduce the font size of list items */
+  }
+}
+
+@media (max-width: 480px) {
+  #h2 {
+    font-size: 36px; /* Further reduce font size for very small screens */
+  }
+
+  .emergency-image {
+    height: 12rem; /* Further reduce the button height */
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .confirmation p {
+    font-size: 12px; /* Reduce the font size of the confirmation message */
+  }
+
+  .confirmation li {
+    font-size: 12px; /* Further reduce font size for list items */
+  }
 }
