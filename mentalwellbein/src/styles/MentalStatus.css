@@ -1,0 +1,125 @@
+/* General styles */
+
+body {
+  background: linear-gradient(#cdc1ff, #e5d9f2);
+  background-color: #f3f4f6;
+  /* color: #333; */
+}
+
+.mental-status {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+/* Section styling */
+.sections {
+  margin-bottom: 30px;
+}
+
+.section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); */
+}
+
+h3 {
+  font-size: 24px;
+  /* color:  #333; */
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.question {
+  margin-bottom: 15px;
+}
+
+.question p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Range Input Styling */
+input[type="range"] {
+  width: 60%;
+  height: 12px;
+  accent-color: lightgreen; /* Light green accent */
+  border-radius: 10px;
+  /* background: none;  No background for the slider */
+  /* outline: none; */
+  cursor: pointer;
+  /* transition: transform 0.3s ease; */
+  margin: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  /* -webkit-appearance-background: none; */
+}
+
+/* Submit button styling */
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Feedback styling */
+.feedback {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feedback p {
+  margin-top: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .mental-status {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .question p {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+  }
+
+  /* Adjust range slider width for smaller screens */
+  input[type="range"] {
+    width: 80%; /* A bit wider for small screens */
+  }
+}

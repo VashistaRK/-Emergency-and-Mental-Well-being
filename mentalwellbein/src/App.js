@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Home from './components/Home';
 import MentalStatus from "./components/MentalStatus";
 import Profile from "./components/Profile";
 import Emergency from "./components/Emergency";
 import Resources from "./components/Resources";
-import './styles/App.css';
+import '../src/styles/App.css';
 
 function App() {
   return (

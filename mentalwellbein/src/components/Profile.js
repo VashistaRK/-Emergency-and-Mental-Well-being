@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Profile.css";
 
 function Profile() {
   const userDetails = {
@@ -7,6 +8,7 @@ function Profile() {
     gender: "Male",
     profession: "Engineer",
     mentalStatus: "Good",
+    contacts: "+1234567890, +0987654321",
   };
 
   return (

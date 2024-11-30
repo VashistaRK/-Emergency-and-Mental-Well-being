@@ -1,0 +1,115 @@
+/* Home.css */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Home container styles */
+.home {
+  background: url(../components/hlo.jpg);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: auto;
+  margin: 20px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column; /* Changed to column for vertical layout */
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+  box-sizing: border-box;
+}
+
+/* Image container */
+.home .img {
+  margin-bottom: 25px;
+  width: 100%; /* Full width of its container */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.home .img img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.home h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Quote styling */
+.quote {
+  font-size: 1.25rem;
+  color: #555;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Responsive styles */
+
+/* Mobile devices (portrait) */
+@media (max-width: 600px) {
+  .home {
+    padding: 20px;
+  }
+
+  .home h1 {
+    font-size: 1.8rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+
+  .home .img img {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Tablets (landscape and portrait) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .home h1 {
+    font-size: 2.2rem;
+  }
+
+  .quote {
+    font-size: 1.1rem;
+  }
+
+  .home .img img {
+    max-width: 80%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .home {
+    padding: 40px;
+  }
+
+  .home h1 {
+    font-size: 3rem;
+  }
+
+  .quote {
+    font-size: 1.4rem;
+  }
+
+  .home .img img {
+    max-width: 400px;
+  }
+}

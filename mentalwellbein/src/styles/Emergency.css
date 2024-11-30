@@ -1,0 +1,72 @@
+/* General styles */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Emergency container */
+.emergency {
+  font-family: "Oswald", sans-serif;
+  max-width: auto;
+  margin: 50px auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 80vh;
+  width: 80rem;
+}
+
+/* Emergency header */
+#h2 {
+  font-size: 64px;
+  color: #ff5555;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.emergency-image {
+  display: inline-block;
+  background: #ff5555;
+  color: white;
+  font-size: 18px;
+  height: 20rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for glow effect */
+  margin: 1rem 0 3rem 0;
+}
+
+.emergency-image:hover {
+  background: #ff3333;
+  box-shadow: 0 0 20px 5px rgba(255, 85, 85, 0.8); /* Glow effect */
+}
+
+/* Confirmation message styles */
+.confirmation {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.confirmation p {
+  font-size: 16px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.confirmation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.confirmation li {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}

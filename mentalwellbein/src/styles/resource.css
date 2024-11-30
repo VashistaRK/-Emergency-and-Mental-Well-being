@@ -1,0 +1,97 @@
+/* General styles for the resources page */
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 90vh;
+}
+
+#h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+/* Resource list container */
+.resource-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Individual resource card */
+.resource-card {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.resource-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.resource-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.resource-card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.resource-card a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  #h2 {
+    font-size: 1.8rem;
+  }
+
+  .resource-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .resource-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #h2 {
+    font-size: 1.5rem;
+  }
+
+  .resource-card {
+    padding: 15px;
+  }
+
+  .resource-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .resource-card p {
+    font-size: 0.85rem;
+  }
+}

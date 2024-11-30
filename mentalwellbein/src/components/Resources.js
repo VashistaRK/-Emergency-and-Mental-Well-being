@@ -1,4 +1,5 @@
 // Resources 
+import "../styles/resource.css";
 
 import React from "react";
 
@@ -11,7 +12,7 @@ function Resources() {
 
   return (
     <div className="resources">
-      <h2>Resources for You</h2>
+      <p id="h2">Resources for You</p>
       <div className="resource-list">
         {resources.map((resource, index) => (
           <div key={index} className="resource-card">

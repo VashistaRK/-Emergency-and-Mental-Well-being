@@ -1,0 +1,93 @@
+/* General Reset */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+} */
+
+.profile {
+  max-width: 800px;
+  height: 80vh;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.profile ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.profile li {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.profile li strong {
+  font-weight: bold;
+  color: #555;
+}
+
+.profile li span {
+  color: #333;
+}
+
+/* Add hover effect for list items */
+.profile li:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile {
+    padding: 15px;
+  }
+
+  .profile h2 {
+    font-size: 2rem;
+  }
+
+  .profile li {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile {
+    padding: 10px;
+  }
+
+  .profile h2 {
+    font-size: 1.8rem;
+  }
+
+  .profile li {
+    font-size: 0.9rem;
+  }
+}
